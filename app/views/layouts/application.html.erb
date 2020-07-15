@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fortune Teller Flexible</title>
+    <%= csrf_meta_tags %>
+
+    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+    <meta charset="utf-8">
+
+    <!-- Make it responsive to small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+  </head>
+
+  <body>
+    <nav>
+      <table border="1" style="width: 100%">
+        <tr>
+          <th colspan="36">Lottery</th>
+        </tr>
+        <tr>
+          <td colspan="18"><a href="/lottery/lucky">Lucky numbers</a></td>
+          <td colspan="18"><a href="/lottery/unlucky">Unlucky numbers</a></td>
+        </tr>
+
+        <tr>
+          <th colspan="36">Horoscopes</th>
+        </tr>
+        <tr>
+          <td colspan="3"><a href="/zodiacs/aries">Aries</a></td>
+          <td colspan="3"><a href="/zodiacs/taurus">Taurus</a></td>
+          <td colspan="3"><a href="/zodiacs/gemini">Gemini</a></td>
+          <td colspan="3"><a href="/zodiacs/cancer">Cancer</a></td>
+          <td colspan="3"><a href="/zodiacs/leo">Leo</a></td>
+          <td colspan="3"><a href="/zodiacs/virgo">Virgo</a></td>
+          <td colspan="3"><a href="/zodiacs/libra">Libra</a></td>
+          <td colspan="3"><a href="/zodiacs/scorpio">Scorpio</a></td>
+          <td colspan="3"><a href="/zodiacs/sagittarius">Sagittarius</a></td>
+          <td colspan="3"><a href="/zodiacs/capricorn">Capricorn</a></td>
+          <td colspan="3"><a href="/zodiacs/aquarius">Aquarius</a></td>
+          <td colspan="3"><a href="/zodiacs/pisces">Pisces</a></td>
+        </tr>
+
+        <tr>
+          <th colspan="36">Dice</th>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="/roll/1/6">1d6</a></td>
+          <td colspan="2"><a href="/roll/2/6">2d6</a></td>
+          <td colspan="2"><a href="/roll/3/6">3d6</a></td>
+          <td colspan="2"><a href="/roll/4/6">4d6</a></td>
+          <td colspan="2"><a href="/roll/5/6">5d6</a></td>
+          <td colspan="2"><a href="/roll/6/6">6d6</a></td>
+          <td colspan="2"><a href="/roll/1/4">1d4</a></td>
+          <td colspan="2"><a href="/roll/2/4">2d4</a></td>
+          <td colspan="2"><a href="/roll/3/4">3d4</a></td>
+          <td colspan="2"><a href="/roll/4/4">4d4</a></td>
+          <td colspan="2"><a href="/roll/1/8">1d8</a></td>
+          <td colspan="2"><a href="/roll/2/8">2d8</a></td>
+          <td colspan="2"><a href="/roll/3/8">3d8</a></td>
+          <td colspan="2"><a href="/roll/1/10">1d10</a></td>
+          <td colspan="2"><a href="/roll/2/10">2d10</a></td>
+          <td colspan="2"><a href="/roll/1/20">1d20</a></td>
+          <td colspan="2"><a href="/roll/2/20">2d20</a></td>
+          <td colspan="2"><a href="/roll/3/20">3d20</a></td>
+        </tr>
+      </table>
+    </nav>
+
+    <%= yield %>
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+image: jelaniwoods/appdev2021-refactoring-fortune-teller@sha256:26406a875c0b9f8d80ff2461c1f2c2d9058c4a4e61bd163974782c124c4899c8
+
+tasks:
+  - command: bundle install
+  - init: bin/setup
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced
+    - wingrunr21.vscode-ruby
+    - mbessey.vscode-rufo
+    - aliariff.vscode-erb-beautify
