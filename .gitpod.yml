@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2021-refactoring-fortune-teller@sha256:26406a875c0b9f8d80ff2461c1f2c2d9058c4a4e61bd163974782c124c4899c8
+image: jelaniwoods/appdev2021-refactoring-fortune-teller@sha256:9aaaeb2653cc94887f09b583bf5509a59b737a3c5427a5edcb67ce2630cd3c65
 
 tasks:
   - command: bundle install
