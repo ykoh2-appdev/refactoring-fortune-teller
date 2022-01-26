@@ -1,5 +1,4 @@
-image: patrickmckernin/refactor
-fortuneteller22
+image: patrickmckernin/refactorfortuneteller22
 
 tasks:
   - init: bin/setup
