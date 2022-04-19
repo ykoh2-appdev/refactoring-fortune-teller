@@ -1,7 +1,12 @@
-image: patrickmckernin/refactorfortuneteller22
+image: jelaniwoods/appdev2022-fortune-teller
 
 tasks:
-  - init: bin/setup
+  - before: |
+      cp -r /base-rails/gems/ruby vendor/bundle
+      bundle config set --local path 'vendor/bundle'
+      rails db:create db:migrate
+      rails db:seed
+      
 ports:
   - port: 3000
     onOpen: open-preview
