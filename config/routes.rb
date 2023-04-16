@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   # PART 3: MORE R→C→A→V PRACTICE
   # ==========================
     
+  get("/roll/:number_of_dice/:how_many_sides", { :controller => "dice", :action => "infinity_and_beyond" })
+
   get("/roll/1/6", { :controller => "dice", :action => "one_six" })
   get("/roll/2/6", { :controller => "dice", :action => "two_six" })
   get("/roll/3/6", { :controller => "dice", :action => "three_six" })
